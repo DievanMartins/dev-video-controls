@@ -1,0 +1,91 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root{
+  --back-body:#999;
+  --back-button:#ffffffbb;
+  --button-hover:orange;
+}
+body{
+  background: var(--back-body);
+  font-family: 'Josefin Sans', sans-serif;
+}
+.container{
+  padding-top: 3rem;
+  width:40rem;
+  margin: auto;
+  position: relative;
+}
+.container h1{
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+video{
+  width: 100%;
+}
+.controls{
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+.btn{
+  width: 1.8rem;
+  cursor: pointer;
+  margin: 0.3rem;
+  background: var(--back-button);
+  clip-path: circle();
+  position: relative;
+  top: 85%;
+  transform: translateY(100%);
+}
+.btn:hover{
+  background: var(--button-hover);
+}
+.create{
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 0.5rem;
+}
+.social{
+  text-align: center;
+}
+.social a img{
+  width: 1.5rem;
+  margin: 0.2rem;
+}
+
+/*RESPOSIVO*/
+@media(max-width:425px){
+  .container{
+    width: 25rem;
+  }
+  .container h1{
+    font-size: 1.5rem;
+  }
+  .btn{
+    width: 1.5rem;
+    top: 82%;
+  }
+}
+
+@media(max-width:375px){
+  .container{
+    width: 22rem;
+  }
+}
+
+@media(max-width:320px){
+  .container{
+    width: 19rem;
+  }
+  .btn{
+    width: 1.5rem;
+    margin: 0.1rem;
+    top: 80%;
+  }
+}

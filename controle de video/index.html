@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--FONTS-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600;700&display=swap" rel="stylesheet">
+  <!--FAVICON-->
+  <link rel="shortcut icon" href="image/favicon.ico">
+  <!--CSS-->
+  <link rel="stylesheet" href="assets/style.css">
+  <title>Dev Video Controls</title>
+</head>
+<body>
+  <div id="cont" class="container">
+    <h1>Dev Video Controls</h1>
+    <video id="video1" src="video/AC_DC - You Shook Me All Night Long (Official Video) ( 1080 X 1480 ).mp4">
+    </video>
+    <div class="controls">
+      <img class="btn" onclick="rewind()" src="image/rewind.svg" alt="Botão de retroceder 10 segundos">
+      <img class="btn" onclick="forward()" src="image/fastforward.svg" alt="Botão de avançar 10 segundos">
+      <img class="btn" onclick="minus()" src="image/minus.svg" alt="Botão de desacelerar o vídeo a cada click">
+      <img class="btn" onclick="plus()" src="image/plus.svg" alt="Botão de acelerar o vídeo a cada click">
+      <img class="btn" onclick="vPlus()" src="image/volumen-plus.svg" alt="Botão de aumentar o volume">
+      <img class="btn" onclick="vMinus()" src="image/volumen-minus.svg" alt="Botão de diminuir o volume">
+      <img class="btn" onclick="play()" src="image/play.svg" alt="Botão de play">
+      <img class="btn" onclick="pause()" src="image/pause.svg" alt="Botão de pause">
+      <img class="btn" onclick="stop()" src="image/stop.svg" alt="Botão de stop">
+    </div>
+  </div>
+  <div class="create">
+    Criado por Dievan Martins
+  </div>
+  <div class="social">
+    <a href="mailto:dievanms@gmail.com" target="_black"><img src="image/gmail.svg" alt="Link de contato para gmail"></a>
+    <a href="https://github.com/DievanMartins" target="_black"><img src="image/github.svg" alt="Link de contato para github"></a>
+  </div>
+  
+
+  <script src="script.js"></script>
+</body>
+</html>
